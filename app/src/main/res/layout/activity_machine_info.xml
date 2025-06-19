@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/dark_background"
+    android:background="@drawable/background_gradient"
     android:padding="16dp">
 
     <TextView
@@ -16,29 +16,20 @@
 
     <Button
         android:id="@+id/button_back_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
         android:layout_marginTop="16dp"
-        android:text="Menu"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent" />
+        android:text="Menu" />
 
     <Button
         android:id="@+id/button_monitor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
         android:layout_marginTop="16dp"
-        android:text="Monitor"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent" />
+        android:text="Monitor" />
 
     <Button
         android:id="@+id/button_maintenance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
         android:layout_marginTop="16dp"
-        android:text="Maintenance"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent" />
+        android:text="Maintenance" />
 
 </LinearLayout>

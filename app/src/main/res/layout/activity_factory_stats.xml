@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/dark_background"
+    android:background="@drawable/background_gradient"
     android:padding="16dp">
 
     <TextView
@@ -13,13 +13,17 @@
         android:text="Factory Statistics"
         android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/button_back_menu"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Output Today: 1000 pcs"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_back_menu"
+        style="@style/PrimaryButton"
         android:layout_marginTop="16dp"
-        android:text="Back"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent" />
+        android:text="Back" />
 
 </LinearLayout>

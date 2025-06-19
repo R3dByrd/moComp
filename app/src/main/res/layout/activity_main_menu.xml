@@ -4,33 +4,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/dark_background"
+    android:background="@drawable/background_gradient"
     android:padding="16dp">
 
     <Button
         android:id="@+id/button_select_machine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Machine"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent" />
+        style="@style/PrimaryButton"
+        android:text="Select Machine" />
 
     <Button
         android:id="@+id/button_show_stats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
         android:text="Show Statistics"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent"
         android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/button_exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/PrimaryButton"
         android:text="Exit"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>
