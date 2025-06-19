@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/dark_background"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button_simulate_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Simulate Scan"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/accent" />
+
+    <Button
+        android:id="@+id/button_manual_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter Machine ID"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/accent" />
+
+</LinearLayout>
