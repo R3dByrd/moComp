@@ -12,8 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoComp"
         tools:targetApi="31">
+        <activity android:name=".FactoryStatsActivity" />
+        <activity android:name=".MachineInfoActivity" />
+        <activity android:name=".MonitoringActivity" />
+        <activity android:name=".MaintenanceActivity" />
+        <activity android:name=".SelectMachineActivity" />
+        <activity android:name=".ScanQRActivity" />
+        <activity android:name=".MainMenuActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
