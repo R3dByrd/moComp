@@ -12,13 +12,13 @@ public class MainMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-
+        
         Button selectButton = findViewById(R.id.button_select_machine);
         Button statsButton = findViewById(R.id.button_show_stats);
         Button exitButton = findViewById(R.id.button_exit);
 
         selectButton.setOnClickListener(v ->
-                startActivity(new Intent(MainMenuActivity.this, ScanQRActivity.class)));
+                startActivity(new Intent(MainMenuActivity.this, SelectMachineActivity.class)));
 
         statsButton.setOnClickListener(v ->
                 startActivity(new Intent(MainMenuActivity.this, FactoryStatsActivity.class)));
