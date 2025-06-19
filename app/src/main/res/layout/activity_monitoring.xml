@@ -3,26 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_gradient"
+    android:background="@color/dark_background"
     android:gravity="center"
     android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Monitoring Data" 
-        android:textColor="@color/white" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Temperature: 75°C\nPressure: 1.2 bar"
+        android:text="Monitoring Data"
         android:textColor="@color/white" />
 
     <Button
         android:id="@+id/button_back_info"
-        style="@style/PrimaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/accent" />
 </LinearLayout>

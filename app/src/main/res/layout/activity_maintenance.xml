@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_gradient"
+    android:background="@color/dark_background"
     android:gravity="center"
     android:padding="16dp">
 
@@ -13,16 +13,12 @@
         android:text="Maintenance Tasks"
         android:textColor="@color/white" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="\u2022 Check oil level\n\u2022 Replace filter"
-        android:textColor="@color/white" />
-
     <Button
         android:id="@+id/button_back_info"
-        style="@style/PrimaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Back" />
+        android:text="Back"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/accent" />
 </LinearLayout>
