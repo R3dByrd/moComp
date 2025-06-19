@@ -18,7 +18,7 @@ public class MainMenuActivity extends AppCompatActivity {
         Button exitButton = findViewById(R.id.button_exit);
 
         selectButton.setOnClickListener(v ->
-                startActivity(new Intent(MainMenuActivity.this, SelectMachineActivity.class)));
+                startActivity(new Intent(MainMenuActivity.this, ScanQRActivity.class)));
 
         statsButton.setOnClickListener(v ->
                 startActivity(new Intent(MainMenuActivity.this, FactoryStatsActivity.class)));
