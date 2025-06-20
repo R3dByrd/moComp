@@ -11,6 +11,7 @@ public class MaintenanceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintenance);
+        ConditionStorage.increment(this, "stopped");
 
         Button back = findViewById(R.id.button_back_info);
         back.setOnClickListener(v -> {

@@ -7,6 +7,14 @@
     android:background="@color/dark_background"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
     <Button
         android:id="@+id/button_select_machine"
         style="@style/DefaultButton"
