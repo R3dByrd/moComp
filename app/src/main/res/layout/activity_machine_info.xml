@@ -8,11 +8,17 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/text_screen_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Machine ID: 12345\nStatus: Running"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
+        style="@style/HeaderText"
+        android:text="Machine Info" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/DefaultText"
+        android:text="Machine ID: 12345\nStatus: Running" />
 
     <Button
         android:id="@+id/button_back_main"

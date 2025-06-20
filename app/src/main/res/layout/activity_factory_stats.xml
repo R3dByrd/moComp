@@ -10,8 +10,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Factory Statistics"
-        android:textColor="@color/white" />
+        style="@style/HeaderText"
+        android:text="Factory Statistics" />
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/bar_chart"

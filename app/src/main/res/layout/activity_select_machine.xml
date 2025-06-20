@@ -7,11 +7,19 @@
     android:background="@color/dark_background"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/text_screen_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        android:text="Select Machine" />
+
     <EditText
         android:id="@+id/edit_machine_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Machine ID" />
+        android:hint="Machine ID"
+        style="@style/DefaultText" />
 
     <Button
         android:id="@+id/button_confirm"
