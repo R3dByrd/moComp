@@ -9,28 +9,19 @@
 
     <Button
         android:id="@+id/button_select_machine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Machine"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent" />
+        style="@style/DefaultButton"
+        android:text="Select Machine" />
 
     <Button
         android:id="@+id/button_show_stats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/DefaultButton"
         android:text="Show Statistics"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent"
         android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/button_exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/DefaultButton"
         android:text="Exit"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/accent"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>
