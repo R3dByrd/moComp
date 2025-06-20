@@ -8,6 +8,7 @@ import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import android.graphics.Color;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.List;
@@ -72,12 +73,19 @@ public class FactoryStatsActivity extends AppCompatActivity {
                 new BarEntry(1, stopped),
                 new BarEntry(2, error)
         ), "Machine States");
+        set.setValueTextColor(Color.WHITE);
+        set.setColor(getColor(R.color.accent));
         BarData data = new BarData(set);
         chart.setData(data);
         List<String> labels = Arrays.asList("läuft", "steht", "error");
         XAxis xAxis = chart.getXAxis();
         xAxis.setGranularity(1f);
         xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
+        xAxis.setTextColor(Color.WHITE);
+        chart.getAxisLeft().setTextColor(Color.WHITE);
+        chart.getAxisRight().setTextColor(Color.WHITE);
+        chart.getLegend().setTextColor(Color.WHITE);
+        chart.getDescription().setEnabled(false);
         chart.invalidate();
     }
 }
