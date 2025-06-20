@@ -14,7 +14,7 @@
         android:text="Scan QR Code" />
 
     <com.journeyapps.barcodescanner.DecoratedBarcodeView
-        android:id="@+id/barcode_scanner"
+        android:id="@+id/qr_scanner"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
