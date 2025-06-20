@@ -13,15 +13,18 @@
         style="@style/HeaderText"
         android:text="Scan QR Code" />
 
-    <Button
-        android:id="@+id/button_simulate_scan"
-        style="@style/DefaultButton"
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:text="Simulate Scan" />
+        android:layout_weight="1" />
 
     <Button
         android:id="@+id/button_manual_entry"
         style="@style/DefaultButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Enter Machine ID" />
 
