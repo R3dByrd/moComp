@@ -10,12 +10,16 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import java.util.List;
+import java.util.Arrays;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 
 public class FactoryStatsActivity extends AppCompatActivity {
     @Override
@@ -70,14 +74,10 @@ public class FactoryStatsActivity extends AppCompatActivity {
         ), "Machine States");
         BarData data = new BarData(set);
         chart.setData(data);
+        List<String> labels = Arrays.asList("läuft", "steht", "error");
         XAxis xAxis = chart.getXAxis();
-        xAxis.setValueFormatter((value, axis) -> {
-            switch ((int) value) {
-                case 0: return "running";
-                case 1: return "stopped";
-                default: return "error";
-            }
-        });
+        xAxis.setGranularity(1f);
+        xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
         chart.invalidate();
     }
 }
