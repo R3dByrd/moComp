@@ -15,10 +15,8 @@ public class ScanQRActivity extends AppCompatActivity {
         Button simulate = findViewById(R.id.button_simulate_scan);
         Button manual = findViewById(R.id.button_manual_entry);
 
-        simulate.setOnClickListener(v -> {
-            startActivity(new Intent(ScanQRActivity.this, MachineInfoActivity.class));
-            finish();
-        });
+        simulate.setOnClickListener(v ->
+                startActivity(new Intent(ScanQRActivity.this, SelectMachineActivity.class)));
 
         manual.setOnClickListener(v ->
                 startActivity(new Intent(ScanQRActivity.this, SelectMachineActivity.class)));
