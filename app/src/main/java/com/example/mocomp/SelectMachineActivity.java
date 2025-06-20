@@ -14,6 +14,7 @@ public class SelectMachineActivity extends AppCompatActivity {
 
         Button confirm = findViewById(R.id.button_confirm);
         confirm.setOnClickListener(v -> {
+            ConditionStorage.increment(this, "running");
             startActivity(new Intent(SelectMachineActivity.this, MachineInfoActivity.class));
             finish();
         });
