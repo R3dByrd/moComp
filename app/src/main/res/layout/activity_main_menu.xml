@@ -8,11 +8,17 @@
     android:padding="16dp">
 
     <TextView
+        android:id="@+id/text_screen_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        android:text="Main Menu" />
+
+    <TextView
         android:id="@+id/text_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="18sp"
+        style="@style/DefaultText"
         android:layout_marginBottom="16dp" />
 
     <Button

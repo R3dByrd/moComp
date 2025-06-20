@@ -8,6 +8,17 @@
     android:background="@color/dark_background"
     tools:context=".LoginActivity">
 
+    <TextView
+        android:id="@+id/text_screen_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/HeaderText"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp" />
+
     <EditText
         android:id="@+id/edit_username"
         android:layout_width="0dp"
@@ -16,7 +27,7 @@
         android:layout_marginTop="340dp"
         android:layout_marginEnd="16dp"
         android:hint="Username"
-        android:textColor="@color/white"
+        style="@style/DefaultText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +43,7 @@
         android:layout_marginEnd="16dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="@color/white"
+        style="@style/DefaultText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
