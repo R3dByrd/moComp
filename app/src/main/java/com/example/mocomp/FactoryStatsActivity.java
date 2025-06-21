@@ -37,12 +37,14 @@ public class FactoryStatsActivity extends AppCompatActivity {
             startActivity(new Intent(FactoryStatsActivity.this, MainMenuActivity.class));
             finish();
         });
+
+
     }
 
     private void fetchRemoteData(Runnable onComplete) {
         new Thread(() -> {
             try {
-                URL url = new URL("https://example.com/posts.json");
+                URL url = new URL("http://10.0.2.2:8000/posts.json");
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
                 StringBuilder sb = new StringBuilder();
